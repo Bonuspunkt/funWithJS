@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Donkey Beverage Dispenser</title>
+  <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+</head>
+
+<body>
+  <h1>Green Donkey Beverage Dispenser</h1>
+  <article>
+    <div type="text" id="display">(init)
+      Please select a product </div>
+  </article>
+  <article class="input">
+    <table class="keypad">
+      <tbody>
+        <tr>
+          <td><button value="1">1</button></td>
+          <td><button value="2">2</button></td>
+          <td><button value="3">3</button></td>
+        </tr>
+        <tr>
+          <td><button value="4">4</button></td>
+          <td><button value="5">5</button></td>
+          <td><button value="6">6</button></td>
+        </tr>
+        <tr>
+          <td><button value="7">7</button></td>
+          <td><button value="8">8</button></td>
+          <td><button value="9">9</button></td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: center;"><button value="0">0</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+
+  <article class="services">
+    <section>
+      <h2>Payment <span id="payment"></span></h2>
+      <button value="PAYMENT_SUCCEEDED">Success</button>
+      <button value="PAYMENT_FAILED">Failed</button>
+    </section>
+    <section>
+      <h2>Dispenser <span id="dispense"></span></h2>
+      <button value="PRODUCT_DISPENSED">Dispensed</button>
+    </section>
+    <section>
+      <h2>autoplay</h2>
+      <button>enabled</button>
+    </section>
+  </article>
+
+</body>
+
+<script src="script.js"></script>
+<script src="script.test.js"></script>
+
+</html>
